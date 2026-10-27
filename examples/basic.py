@@ -12,7 +12,7 @@ async def bulk_insert(rows: list[dict]) -> list[int]:
 
 
 async def main() -> None:
-    async with Batcher(bulk_insert, max_size=50, max_wait=0.02) as batcher:
+    async with Batcher(bulk_insert, max_size=200, max_wait=5) as batcher:
         ids = await asyncio.gather(*(batcher.submit({"n": i}) for i in range(120)))
     print(ids[:5], "...", len(ids), "ids;", batcher.stats)
 
