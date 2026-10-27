@@ -1,8 +1,8 @@
 """Plain threaded code: many callers, one batched write."""
 
-from concurrent.futures import ThreadPoolExecutor
 import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 from microbatcher import SyncBatcher
 
