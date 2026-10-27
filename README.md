@@ -43,7 +43,8 @@ Every codebase has a hand-rolled "list + timer + lock" for `INSERT` batching, SQ
 ## Install
 
 ```bash
-pip install microbatcher
+# THIS PACKAGE IS NOT YET DISTRIBUTED...
+pip install TODO
 ```
 
 ## The flush contract
